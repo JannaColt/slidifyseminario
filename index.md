@@ -9,7 +9,7 @@ hitheme     : idea   #
 widgets     : mathjax            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
-github:
+github:    
   user: JannaColt
   repo: slidifyseminario
 ---

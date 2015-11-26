@@ -1,0 +1,75 @@
+---
+title       : Seminario Interno 
+???subtitle    : Seminario de Avances de Proyecto
+author      : Martha Adriana Martinez Olivas
+job         : Analisis_Resultados
+framework   : revealjs # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js # {highlight.js, prettify, highlight}
+hitheme     : idea   # 
+widgets     : mathjax            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
+
+---
+
+## Factores ambientales que definen la composicion de las comunidades bacterianas en un suelo haloalcalino extremo altamente heterogeneo
+
+1. Edit YAML front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+
+--- fill  #imagen
+
+![imagen](https://scontent-atl3-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12307549_10153751928634603_4747529172081243758_o.jpg)
+
+
+---
+## Correlograma pH
+
+```{r, echo=4}
+library(ncf)
+MuestreoInicial <- read.delim("~/Dropbox/Doctorado Janna/Desarrollo/MuestreoInicial.txt")
+attach(MuestreoInicial)
+C1.pH <- correlog(E, N.1, MuestreoInicial$pH, increment=10, resamp=1000, latlon=F, quiet=T)
+C1.pH
+```
+
+---
+## Correlograma pH
+======================================
+
+```{r, echo=5}
+library(ncf)
+MuestreoInicial <- read.delim("~/Dropbox/Doctorado Janna/Desarrollo/MuestreoInicial.txt")
+attach(MuestreoInicial)
+C1.pH <- correlog(E, N.1, MuestreoInicial$pH, increment=10, resamp=1000, latlon=F, quiet=T)
+plot(C1.pH)
+```
+
+---
+## Slide 4
+======================================
+
+$$I(d) =\frac{\frac{1}{w} \sum_{h=1}^{n} \sum_{i=1}^{n} W_{hi} (y_{h}-\tilde{y})(y_{i}-\tilde{y})}{\frac{1}{n} \sum_{i=1}^{n} (y_{i}-\tilde{y})^2 }$$
+
+---
+## Slide 5
+======================================
+Animated list boom
+
+> 1. Soy 1
+> 2. Una potranquilla1
+> 3. Brava1
+
+---
+## Slide 6
+======================================
+
+$$\tilde{\gamma}(h) = \frac{1}{2N(h)} \sum^{N(h)}_{\alpha =1 } [Z(u_\alpha)-Z(u_\alpha + h)]^2$$
+
+---
+
+
+
+

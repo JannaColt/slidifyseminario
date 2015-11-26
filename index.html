@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Seminario Interno</title>
+  <meta name="description" content="">
+  <meta name="author" content="Martha Adriana Martinez Olivas">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/idea.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h2>Factores ambientales que definen la composicion de las comunidades bacterianas en un suelo haloalcalino extremo altamente heterogeneo</h2>
+  <ol>
+<li>Edit YAML front matter</li>
+<li>Write using R Markdown</li>
+<li>Use an empty line followed by three dashes to separate slides!</li>
+</ol>
+
+</section>
+<section class='' data-state='' id='imagen'>
+  
+  <p><img src="https://scontent-atl3-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/12307549_10153751928634603_4747529172081243758_o.jpg" alt="imagen"></p>
+
+</section>
+<section class='' data-state='' id='slide-3'>
+  <h2>Correlograma pH</h2>
+  <pre><code class="r">C1.pH &lt;- correlog(E, N.1, MuestreoInicial$pH, increment=10, resamp=1000, latlon=F, quiet=T)
+</code></pre>
+
+<pre><code>## $n
+##  0  1  2  3  4  5  7  8  9 10 11 12 13 14 16 17 18 19 20 21 22 
+##  2  7  6  3  6  6  2  1  5  3  1  1  5  3  4  3 11  1  4  3  1 
+## 
+## $mean.of.class
+##          0          1          2          3          4          5 
+##   0.000000   3.893757  18.015494  21.316407  37.071488  44.262348 
+##          7          8          9         10         11         12 
+##  63.488546  76.138078  82.992885  92.261652 108.234664 112.854073 
+##         13         14         16         17         18         19 
+## 127.309213 134.209955 153.646758 168.130095 172.955038 188.697025 
+##         20         21         22 
+## 192.840225 208.331335 211.729527 
+## 
+## $correlation
+##            0            1            2            3            4 
+##  0.601119664 -0.542147356  0.840226265 -1.197410777 -0.163809191 
+##            5            7            8            9           10 
+##  0.151866107 -1.380265920  0.009797061 -0.374653604  0.005551668 
+##           11           12           13           14           16 
+##  0.886773968 -0.111196641  0.218306508 -0.035689293  0.221536039 
+##           17           18           19           20           21 
+##  0.015861908 -0.056695719 -0.317704689 -0.428463961 -0.587590390 
+##           22 
+##  1.046885934 
+## 
+## $x.intercept
+## (Intercept) 
+##    1.846454 
+## 
+## $p
+##  [1] 0.177822178 0.080919081 0.008991009 0.024975025 0.395604396
+##  [6] 0.246753247 0.024975025 0.496503497 0.220779221 0.424575425
+## [11] 0.134865135 0.402597403 0.179820180 0.495504496 0.253746254
+## [16] 0.419580420 0.470529471 0.337662338 0.206793207 0.140859141
+## [21] 0.126873127
+## 
+## $call
+## [1] &quot;correlog(x = E, y = N.1, z = MuestreoInicial$pH, increment = 10, &quot;
+## [2] &quot;    resamp = 1000, latlon = F, quiet = T)&quot;                        
+## 
+## attr(,&quot;class&quot;)
+## [1] &quot;correlog&quot;
+</code></pre>
+
+</section>
+<section class='' data-state='' id='slide-4'>
+  <h2>Correlograma pH</h2>
+  <h1></h1>
+
+<pre><code class="r">plot(C1.pH)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+</section>
+<section class='' data-state='' id='slide-5'>
+  <h2>Slide 4</h2>
+  <h1></h1>
+
+<p>\[I(d) =\frac{\frac{1}{w} \sum_{h=1}^{n} \sum_{i=1}^{n} W_{hi} (y_{h}-\tilde{y})(y_{i}-\tilde{y})}{\frac{1}{n} \sum_{i=1}^{n} (y_{i}-\tilde{y})^2 }\]</p>
+
+</section>
+<section class='' data-state='' id='slide-6'>
+  <h2>Slide 5</h2>
+  <h1></h1>
+
+<p>Animated list boom</p>
+
+<ol class = "build incremental">
+<li>Soy 1</li>
+<li>Una potranquilla1</li>
+<li>Brava1</li>
+</ol>
+
+</section>
+<section class='' data-state='' id='slide-7'>
+  <h2>Slide 6</h2>
+  <h1></h1>
+
+<p>\[\tilde{\gamma}(h) = \frac{1}{2N(h)} \sum^{N(h)}_{\alpha =1 } [Z(u_\alpha)-Z(u_\alpha + h)]^2\]</p>
+
+</section>
+<section class='' data-state='' id='slide-8'>
+  
+  
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'default', 
+    transition: Reveal.getQueryHash().transition || 'default', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script> -->
+<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>

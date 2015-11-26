@@ -12,7 +12,6 @@ knit        : slidify::knit2slides
 github:
   user: JannaColt
   repo: slidifyseminario
-
 ---
 
 ## Factores ambientales que definen la composicion de las comunidades bacterianas en un suelo haloalcalino extremo altamente heterogeneo
